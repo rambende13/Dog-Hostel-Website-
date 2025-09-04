@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased;
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 400px);
+}
+
+.section-anchor {
+  scroll-margin-top: 96px;
+}
