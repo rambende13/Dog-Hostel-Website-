@@ -1,30 +1,43 @@
-🐾 Bela’s Paw’s – Dog Hostel Website
+Bela’s Paw’s – Dog Hostel Website
 
-A modern, responsive, and user-friendly website for Bela’s Paw’s Pet Home Stay & Café 🐶✨.
-This project is designed to showcase the facilities, services, and loving environment offered for pets, ensuring a safe and enjoyable stay.
+A modern, responsive, and user-friendly website for Bela’s Paw’s Pet Home Stay & Café.
+The site showcases facilities, services, and the caring environment offered for pets.
 
-🚀 Features
+Features
 
-📌 Responsive Navbar with smooth scrolling navigation
+- Responsive navbar with smooth scrolling
+- Services & Facilities section
+- Gallery to showcase pets and hostel space
+- Customer Reviews
+- Contact section with address, phone numbers, and social links
+- Footer with navigation
+- Fully responsive design
 
-🐕 Services & Facilities Sections highlighting food, hygiene, play areas, and more
+Tech Stack
+- React.js
+- Tailwind CSS
+- Framer Motion
 
-📷 Gallery to showcase happy pets and hostel space
+Run Locally
 
-⭐ Customer Reviews to build trust with new visitors
+- git clone https://github.com/rambende13/Dog-Hostel-Website-.git
+- cd Dog-Hostel-Website-
+- npm install
+- npm start
 
-📍 Contact Section & Footer with address, phone numbers, and social links
 
-🎨 Modern UI with gradient backgrounds, animations, and a friendly design
+Runs at http://localhost:3000/
 
-🛠️ Tech Stack
+Live Demo
 
-React.js ⚛️ (frontend framework)
+👉 View Website
 
-Tailwind CSS 🎨 (styling)
+Client Requirements Covered
 
-Framer Motion ✨ (smooth animations)
-
-📂 Purpose
-
-This repository is meant for building and deploying a real-world Dog Hostel website that is visually appealing, easy to navigate, and helps pet parents connect with the hostel quickly.
+- Clean homepage with branding
+- Services & Facilities section
+- Gallery & Reviews
+- Contact details with clickable phone links
+- Footer styled like rest of site
+- Responsive for all devices
+- Auto-deployment with GitHub Actions
