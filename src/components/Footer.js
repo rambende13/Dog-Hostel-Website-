@@ -2,18 +2,22 @@ import React from "react";
 import siteData from "../siteData";
 
 export default function Footer() {
-  const [p1, p2] = siteData.phones;
-
   return (
     <footer className="relative overflow-hidden mt-20">
       {/* Gradient Background */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-emerald-200 via-white to-pink-100"></div>
-      <div className="absolute -top-32 -left-32 w-96 h-96 bg-pink-200/40 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-200/40 rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-tr from-emerald-200 via-white to-pink-100 pointer-events-none"></div>
+      <div className="absolute -top-32 -left-32 w-96 h-96 bg-pink-200/40 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-emerald-200/40 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div className="max-w-6xl mx-auto px-6 py-12 text-center space-y-6">
-        {/* Address */}
-        <p className="text-gray-900 font-bold text-base">
+      {/* Main Content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 text-center space-y-6">
+        {/* Tagline */}
+        <p className="text-xl font-semibold text-green-900">
+          Caring for your pets like family 🐾
+        </p>
+
+        {/* Address (highlighted) */}
+        <p className="text-lg font-bold text-gray-900 bg-white/80 px-4 py-2 rounded-lg inline-block shadow">
           {siteData.addressText}
         </p>
 
@@ -30,24 +34,6 @@ export default function Footer() {
           </a>
         </p>
 
-        {/* Phones */}
-        <p className="space-x-4">
-          📞{" "}
-          <a
-            href={`tel:${p1}`}
-            className="text-emerald-700 font-semibold hover:text-emerald-900 transition"
-          >
-            {p1}
-          </a>
-          <span className="text-gray-500">|</span>
-          <a
-            href={`tel:${p2}`}
-            className="text-emerald-700 font-semibold hover:text-emerald-900 transition"
-          >
-            {p2}
-          </a>
-        </p>
-
         {/* Instagram */}
         <p>
           📷{" "}
@@ -61,20 +47,10 @@ export default function Footer() {
           </a>
         </p>
 
-        {/* Navigation Links */}
-        <div className="flex flex-wrap gap-x-6 gap-y-2 justify-center pt-4 text-sm font-semibold">
-          {["Home", "About", "Services", "Gallery", "Reviews", "Contact"].map(
-            (item) => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                className="text-gray-700 hover:text-pink-600 transition"
-              >
-                {item}
-              </a>
-            )
-          )}
-        </div>
+        {/* Business Hours */}
+        <p className="text-gray-700 font-medium">
+          ⏰ Open daily: <span className="text-emerald-700">7:00 AM – 9:00 PM</span>
+        </p>
 
         {/* Copyright */}
         <p className="text-xs text-gray-600 pt-4">

@@ -28,22 +28,24 @@ export default function About() {
           </h2>
 
           <p className="mt-6 text-gray-700 leading-relaxed text-lg">
-            Run by two brothers, Bela’s Paw’s started during the lockdown while
-            fostering and caring for rescue dogs. With support from PFA, they
-            helped{" "}
-            <strong className="text-pink-600 font-semibold">25–30 dogs</strong>{" "}
-            across Pune — providing medical care, proper food, and most
-            importantly, <span className="italic">lots of love</span>.
+            Run by two brothers, Bela’s Paw’s began during the lockdown with a simple act 
+            of kindness — fostering one rescue dog at home. What started as a small effort 
+            quickly grew into a heartfelt mission. With guidance and support from PFA, they 
+            went on to care for <strong className="text-pink-600 font-semibold">
+            more than 50+ rescue dogs</strong> across Pune — providing 
+            medical treatment, balanced meals, safe shelter, and above all, 
+            <span className="italic">unconditional love</span>.
           </p>
 
           <p className="mt-4 text-gray-700 leading-relaxed text-lg">
-            In 2024, they opened this{" "}
-            <em className="text-emerald-700 font-semibold">
-              Pet Home Stay & Café
-            </em>{" "}
-            where your furry friends can enjoy a safe, mountain-side retreat
-            with daily updates, playtime, and home-style food.
+            In 2024, this passion transformed into{" "}
+            <em className="text-emerald-700 font-semibold">Bela’s Paw’s Pet Home Stay & Café</em>, 
+            a cozy retreat nestled in the mountains where pets can enjoy open play areas, 
+            healthy home-style meals, and daily updates to keep parents worry-free.  
+            Whether it’s a short stay or long vacation, every furry guest here becomes 
+            part of our extended family.
           </p>
+
 
           {/* Highlighted Features */}
           <div className="mt-8 grid grid-cols-2 gap-6">

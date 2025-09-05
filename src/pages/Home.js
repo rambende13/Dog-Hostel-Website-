@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 
 function Home() {
-  const [showModal, setShowModal] = useState(false);
+  const [modalType, setModalType] = useState(null);
+
+  const contacts = [
+    { name: "Sagar", phone: "919131546670" },
+    { name: "Madhav", phone: "918180954507" },
+  ];
 
   return (
     <section
@@ -41,7 +46,7 @@ function Home() {
       {/* CTA Buttons */}
       <div className="mt-8 flex flex-col sm:flex-row gap-5">
         <motion.button
-          onClick={() => setShowModal(true)}
+          onClick={() => setModalType("call")}
           className="px-8 py-4 bg-white/40 backdrop-blur-md text-pink-700 border border-white/50 
           font-semibold rounded-full shadow-md hover:shadow-xl transition-all duration-300"
           whileHover={{ scale: 1.08 }}
@@ -51,7 +56,7 @@ function Home() {
         </motion.button>
 
         <motion.button
-          onClick={() => setShowModal(true)}
+          onClick={() => setModalType("whatsapp")}
           className="px-8 py-4 bg-white/40 backdrop-blur-md text-emerald-700 border border-white/50 
           font-semibold rounded-full shadow-md hover:shadow-xl transition-all duration-300"
           whileHover={{ scale: 1.08 }}
@@ -62,51 +67,38 @@ function Home() {
       </div>
 
       {/* Modal */}
-      {showModal && (
+      {modalType && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl shadow-xl p-6 w-80 text-center">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Contact Us</h3>
+            <h3 className="text-xl font-bold text-gray-800 mb-4">
+              {modalType === "call" ? "Call Us" : "Chat on WhatsApp"}
+            </h3>
 
-            {/* Sagar */}
-            <div className="mb-4">
-              <p className="font-semibold">📞 Sagar</p>
-              <a
-                href="tel:+919131546670"
-                className="block mt-2 rounded bg-pink-600 text-white px-4 py-2 hover:bg-pink-700"
-              >
-                Call Sagar
-              </a>
-              <a
-                href="https://wa.me/919131546670"
-                target="_blank"
-                rel="noreferrer"
-                className="block mt-2 rounded bg-green-600 text-white px-4 py-2 hover:bg-green-700"
-              >
-                WhatsApp Sagar
-              </a>
-            </div>
-
-            {/* Madhav */}
-            <div className="mb-4">
-              <p className="font-semibold">📞 Madhav</p>
-              <a
-                href="tel:+918180954507"
-                className="block mt-2 rounded bg-pink-600 text-white px-4 py-2 hover:bg-pink-700"
-              >
-                Call Madhav
-              </a>
-              <a
-                href="https://wa.me/918180954507"
-                target="_blank"
-                rel="noreferrer"
-                className="block mt-2 rounded bg-green-600 text-white px-4 py-2 hover:bg-green-700"
-              >
-                WhatsApp Madhav
-              </a>
-            </div>
+            {contacts.map(({ name, phone }) => (
+              <div key={phone} className="mb-4">
+                <p className="font-semibold">{name}</p>
+                {modalType === "call" ? (
+                  <a
+                    href={`tel:+${phone}`}
+                    className="block mt-2 rounded bg-pink-600 text-white px-4 py-2 hover:bg-pink-700"
+                  >
+                    Call {name}
+                  </a>
+                ) : (
+                  <a
+                    href={`https://wa.me/${phone}`}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block mt-2 rounded bg-green-600 text-white px-4 py-2 hover:bg-green-700"
+                  >
+                    WhatsApp {name}
+                  </a>
+                )}
+              </div>
+            ))}
 
             <button
-              onClick={() => setShowModal(false)}
+              onClick={() => setModalType(null)}
               className="mt-4 rounded-full bg-gray-300 text-gray-700 px-5 py-2 hover:bg-gray-400"
             >
               Close
