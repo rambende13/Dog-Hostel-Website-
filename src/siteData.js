@@ -6,6 +6,6 @@ const siteData = {
   addressText:
     "Survey no.42, Near Dattawadi, Nere, Near Hinjawadi Hills (Xrbia) Main Gate, Pune 411057",
   mapLink: "https://share.google/6vfpCfztqYQ7mNbVL",
-  instagram: "https://instagram.com/", // add handle later
+  instagram: "https://www.instagram.com/belas_paws_pet_homestay/", // add handle later
 };
 export default siteData;
