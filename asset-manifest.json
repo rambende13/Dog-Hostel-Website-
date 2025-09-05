@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Dog-Hostel-Website-/static/css/main.a93b7456.css",
-    "main.js": "/Dog-Hostel-Website-/static/js/main.e4659086.js",
+    "main.js": "/Dog-Hostel-Website-/static/js/main.c985f6be.js",
     "index.html": "/Dog-Hostel-Website-/index.html",
     "main.a93b7456.css.map": "/Dog-Hostel-Website-/static/css/main.a93b7456.css.map",
-    "main.e4659086.js.map": "/Dog-Hostel-Website-/static/js/main.e4659086.js.map"
+    "main.c985f6be.js.map": "/Dog-Hostel-Website-/static/js/main.c985f6be.js.map"
   },
   "entrypoints": [
     "static/css/main.a93b7456.css",
-    "static/js/main.e4659086.js"
+    "static/js/main.c985f6be.js"
   ]
 }
