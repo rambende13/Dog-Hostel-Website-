@@ -27,10 +27,10 @@ Clone the project and install dependencies:
 - npm start
 
 
-The app will run at: http://localhost:3000/
+The app will run at: [http://localhost:3000/](http://localhost:3000/)
 
-🌐 Live Demo
-👉 View Website
+🌐 Live Demo  
+👉 [View Website](https://rambende13.github.io/Dog-Hostel-Website-/)
 
 ✅ Project Highlights
 
